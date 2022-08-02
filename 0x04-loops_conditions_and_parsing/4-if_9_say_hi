@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# prints string 10 times with a loop
-counter=1
-while [ $counter -le 10 ]
-do
-echo Best School
-if [ $counter == 9 ]
-then
-    echo Hi
-fi
-((counter++))
+# displays Holberton School 10 times but for the 9th iteration, displays Holberton School and then Hi on a new line
+
+COUNTER=0
+while [ "$COUNTER" -lt 10 ]; do
+	echo "Best School"
+	if [ "$COUNTER" -eq 8 ]
+	then
+	    echo "Hi"
+	fi
+	let COUNTER=COUNTER+1
 done
